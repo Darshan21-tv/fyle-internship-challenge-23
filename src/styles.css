@@ -1,0 +1,62 @@
+/* styles.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+/* Add custom styles */
+.container {
+  max-width: 80rem; /* Equivalent to Tailwind CSS max-w-screen-lg */
+  margin-left: auto; /* Equivalent to Tailwind CSS mx-auto */
+  margin-right: auto; /* Equivalent to Tailwind CSS mx-auto */
+}
+
+.search-field input {
+  border-radius: 0.375rem; /* Equivalent to Tailwind CSS rounded-md */
+}
+
+.search-field button {
+  border-radius: 0.375rem; /* Equivalent to Tailwind CSS rounded-md */
+}
+
+.loading-spinner,
+.no-repositories {
+  font-size: 1.125rem; /* Equivalent to Tailwind CSS text-lg */
+}
+
+.repositories-table table {
+  border-collapse: collapse; /* Equivalent to Tailwind CSS border-collapse */
+}
+
+.repositories-table th,
+.repositories-table td {
+  border: 1px solid #e5e7eb; /* Equivalent to Tailwind CSS border */
+  padding: 0.75rem; /* Equivalent to Tailwind CSS p-3 */
+}
+
+.repositories-table th {
+  background-color: #f3f4f6; /* Equivalent to Tailwind CSS bg-gray-100 */
+}
+
+.paginator {
+  justify-content: center; /* Equivalent to Tailwind CSS justify-center */
+}
+
+@media (max-width: 639px) {
+  .container {
+    padding-left: 1rem; /* Equivalent to Tailwind CSS px-4 */
+    padding-right: 1rem; /* Equivalent to Tailwind CSS px-4 */
+  }
+
+  .search-field input,
+  .search-field button {
+    width: 100%; /* Equivalent to Tailwind CSS w-full */
+  }
+
+  .paginator {
+    padding-left: 0; /* Equivalent to Tailwind CSS pl-0 */
+    padding-right: 0; /* Equivalent to Tailwind CSS pr-0 */
+  }
+}

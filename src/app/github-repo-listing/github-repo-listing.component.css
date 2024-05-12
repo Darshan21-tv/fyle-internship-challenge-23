@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-field {
+    width: 70%;
+    max-width: 500px;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .no-repositories {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .repositories-table {
+    margin-top: 20px;
+  }
+  
+  .mat-elevation-z8 {
+    width: 100%;
+  }
+  
+  .paginator {
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .search-field {
+      width: 90%;
+      max-width: none;
+    }
+  }
+  
